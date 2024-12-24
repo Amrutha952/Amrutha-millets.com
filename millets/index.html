@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Social Media Links Page">
+    <title>Amrutha Millets </title>
+    <!-- Importing Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- FontAwesome for Social Media Icons -->
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Apple Chancery, cursive";
+            color: #fff;
+            height: 100vh; /* Ensure the body takes full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://your-image-url.com/path/to/your/image.jpg') no-repeat center center fixed; /* Custom Image Background */
+            background-size: cover;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay to enhance text visibility */
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            width: 80%;
+            max-width: 450px; /* Limiting the width */
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 500px; /* Fixed height so it won't stretch too much */
+        }
+
+        .logo img {
+            width: 100%; /* Make image fit the box */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 0; /* Remove circle */
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        h1 {
+            font-family:"Apple Chancery, cursive";
+             /* Changed font to Roboto */
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        p {
+            font-family:"Cormorant Garamond"; /*p*/
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #ccc;
+            font-weight: 300; /* Lighter weight for the paragraph */
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .social-links a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 60px;
+            color: #fff;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 0 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Social Media Button Colors */
+        .facebook {
+            background-color: #3b5998;
+        }
+
+        .instagram {
+            background-color: #e4405f;
+        }
+
+        .whatsapp {
+            background-color: #25D366;
+        }
+
+        .youtube {
+            background-color: #FF0000;
+        }
+
+        .social-links i {
+            margin-right: 15px;
+            font-size: 24px;
+        }
+
+        .brand-text {
+            font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+            font-size: 28px;
+            margin-top: 30px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="overlay"></div> <!-- Overlay for the background image -->
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="file:///D:/HP/Desktop/millets/logo.png"
+             alt="Logo" id="logo-img">
+        </div>
+
+        <!-- Title and Description -->
+        <h1>Connect with Me</h1>
+        <p>Follow me on my social media platforms!</p>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61567137024065&mibextid=ZbWKwL" target="_blank" class="facebook" title="Facebook">
+                <i class="fab fa-facebook-f"></i> Amrutha Millet
+            </a>
+            <a href="https://www.instagram.com/amrutha_millet?igsh=MWt5aGkyaWFuMzdqaQ==" target="_blank" class="instagram" title="Instagram">
+                <i class="fab fa-instagram"></i> Amrutha Millet
+            </a>
+            <a href="https://youtube.com/@amruthamilletsgadag?si=Yn88bItFrOzLWxxX" target="_blank" class="youtube" title="YouTube">
+                <i class="fab fa-youtube"></i> Amrutha Millet
+            </a>
+            <a href="https://wa.me/7406565535" target="_blank" class="whatsapp" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i> Amrutha Millet
+            </a>
+        </div>
+
+        <!-- Brand Text -->
+        <div class="brand-text">
+            Amrutha Millets
+        </div>
+
+    </div>
+
+    <!-- JavaScript for Logo Hover Animation -->
+    <script>
+        const logo = document.getElementById('logo-img');
+
+        logo.addEventListener('mouseover', () => {
+            logo.style.transform = 'scale(1.05)';
+        });
+
+        logo.addEventListener('mouseout', () => {
+            logo.style.transform = 'scale(1)';
+        });
+    </script>
+
+</body>
+
+</html>
